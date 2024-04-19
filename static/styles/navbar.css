@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-family: 'Comic Sans MS', ' Comic Sans', cursive;
+    font-size: 35px;
+    color: rgb(70, 41, 81);
+}
+
+.nav-link {
+    color: rgb(100, 92, 104);
+    font-size: 17px;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-nav{
+    margin-left: 37%;
+}
+

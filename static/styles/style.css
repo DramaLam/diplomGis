@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+.app-wrapper {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "content";
+
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+.app-wrapper-content {
+    grid-area: content;
+
+    display: grid;
+    /* background-color: rgb(126, 41, 41); */
+
+    grid-template-areas: 
+    "search search"
+    "catalog map";
+
+    grid-template-columns: 25% 75%;
+
+  }
+
+  .app-wrapper-content-profile {
+    grid-area: content;
+  }
+  
+  .header {
+    grid-area: header;
+    /* background-color: rgb(227, 207, 243); */
+    /* margin-bottom: 0px; */
+  }
+
+  .header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+/*.map_container {
+    /* max-width: 100%; */
+    /* margin: 50px auto; */
+
+    /* min-height: 100%;
+    min-width: 100%; */
+
+    /* width: 1738px;
+    height: 1200px; */
+
+/* }*/ 
+
+
+.seach-area {
+  grid-area: search;
+  background-color: rgb(134, 110, 154);
+  margin-bottom: 0px;
+}
+
+.catalog-area {
+  grid-area: catalog;
+  background-color: rgb(163, 136, 182);
+  margin-bottom: 0px;
+
+  max-height: 828px;
+
+  /* grid-auto-flow: column;
+  grid-auto-columns: minmax(160px,1fr);
+  overflow-x: auto; */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.card-img-top {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.map-area {
+  grid-area: map;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0px;
+}
+
+.card {
+
+  max-width: 100%;
+  max-width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  align-items: center
+}

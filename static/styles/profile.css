@@ -1,0 +1,53 @@
+.app-wrapper-prof {
+    display: grid;
+    grid-template-areas:
+    "user"
+    "addObject"
+    "object";
+}
+
+.app-wrapper-user {
+    grid-area: user;
+    margin: 20px;
+}
+
+.app-wrapper-object {
+    grid-area: object;
+}
+
+.app-wrapper-ad {
+    grid-area: addObject;
+}
+
+.user-text{
+    font-family: 'Comic Sans MS', ' Comic Sans', cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+.row {
+    margin-top: calc(0 * var(--bs-gutter-y));
+    margin-right: calc(8 * var(--bs-gutter-x));
+    margin-left: calc(8 * var(--bs-gutter-x));
+}
+
+.btn.text-bg-secondary {
+    margin-left: 25%;
+}
+
+.button-add {
+    margin-left: 26%;
+}
+
+/* .button-add.ex {
+    margin-left: 50%;
+} */
+
+.button-ex {
+    margin-left: 50%;
+}
+
+/* .h-100 {
+    height: 100%!important;
+  } */
+
